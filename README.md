@@ -2,6 +2,9 @@
 
 > A simple Python HTTP server exporting OwnTracks Recorder stats for Prometheus
 
+![Build (Docker)](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Build%20%28Docker%29/badge.svg)
+![Lint](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Lint/badge.svg)
+
 ## Installation
 
 ### Docker
