@@ -119,9 +119,14 @@ METRICS["version"].set_value({"version": "", "git": ""})
 
 
 async def update_metrics() -> None:
+    await asyncio.gather(*[metric.update() for metric in METRICS.values()])
+
+
+async def update_metrics_loop() -> None:
+    await asyncio.sleep(UPDATE_INTERVAL)
     while True:
         start = datetime.datetime.now()
-        await asyncio.gather(*[metric.update() for metric in METRICS.values()])
+        await update_metrics()
         end = datetime.datetime.now()
         duration = (end - start).total_seconds()
         await asyncio.sleep(UPDATE_INTERVAL - duration)
@@ -134,5 +139,8 @@ routes = [
 app = Starlette(
     debug=DEBUG,
     routes=routes,
-    on_startup=[partial(asyncio.get_event_loop().create_task, update_metrics())],
+    on_startup=[
+        update_metrics,
+        partial(asyncio.get_event_loop().create_task, update_metrics_loop()),
+    ],
 )
