@@ -115,8 +115,6 @@ METRICS = {
     ]
 }
 
-METRICS["version"].set_value({"version": "", "git": ""})
-
 
 async def update_metrics() -> None:
     await asyncio.gather(*[metric.update() for metric in METRICS.values()])
