@@ -88,6 +88,7 @@ scrape_configs:
 | `owntracks_last_locations_count` | Total number of last locations |
 | `owntracks_last_received_timestamp` | Timestamp of the last received message |
 | `owntracks_locations_count` | Total number of locations |
+| `owntracks_storagedir_size` | Size of the OwnTracks Recorder's storage directory in bytes |
 | `owntracks_users_count` | Total number of users |
 | `owntracks_version_info` | OwnTracks Recorder version |
 | `owntracks_waypoints_count` | Total number of waypoints |

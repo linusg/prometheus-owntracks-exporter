@@ -18,6 +18,7 @@ __all__ = [
     "get_last_locations_count",
     "get_last_received_timestamp",
     "get_locations_count",
+    "get_storagedir_size",
     "get_users_count",
     "get_version_info",
     "get_waypoints_count",
@@ -59,6 +60,16 @@ def _user_device_dirs(path: Path) -> Iterator[Tuple[Path, str, str]]:
     for user in _subdir_names(path):
         for device in _subdir_names(path.joinpath(user)):
             yield path.joinpath(user).joinpath(device), user, device
+
+
+def _get_directory_size(path: Path) -> int:
+    total = 0
+    for entry in path.iterdir():
+        if entry.is_file():
+            total += entry.stat().st_size
+        elif entry.is_dir():
+            total += _get_directory_size(entry)
+    return total
 
 
 def _csv_row_is_location_data(row: str) -> bool:
@@ -132,6 +143,10 @@ async def get_locations_count(owntracks_storagedir: Path) -> int:
         for rec_file in user_device_dir.glob("*.rec"):
             count += await _locations_in_rec_file(rec_file)
     return count
+
+
+async def get_storagedir_size(owntracks_storagedir: Path) -> int:
+    return _get_directory_size(owntracks_storagedir)
 
 
 async def get_users_count(owntracks_storagedir: Path) -> int:

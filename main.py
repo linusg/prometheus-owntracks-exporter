@@ -24,6 +24,7 @@ from metrics import (
     get_last_locations_count,
     get_last_received_timestamp,
     get_locations_count,
+    get_storagedir_size,
     get_users_count,
     get_version_info,
     get_waypoints_count,
@@ -105,6 +106,12 @@ METRICS = {
             "last_received_timestamp",
             "Timestamp of the last received message",
             partial(get_last_received_timestamp, OWNTRACKS_STORAGEDIR),
+        ),
+        (
+            Gauge,
+            "storagedir_size",
+            "Size of the OwnTracks Recorder's storage directory in bytes",
+            partial(get_storagedir_size, OWNTRACKS_STORAGEDIR),
         ),
         (
             Info,
