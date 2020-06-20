@@ -2,8 +2,11 @@
 
 > A simple Python HTTP server exporting OwnTracks Recorder stats for Prometheus
 
-![Build (Docker)](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Build%20%28Docker%29/badge.svg)
-![Lint](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Lint/badge.svg)
+[![Build (Docker)](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Build%20%28Docker%29/badge.svg)](https://github.com/linusg/prometheus-owntracks-exporter/actions?query=workflow%3A%22Build+%28Docker%29%22+branch%3Amaster)
+[![Lint](https://github.com/linusg/prometheus-owntracks-exporter/workflows/Lint/badge.svg)](https://github.com/linusg/prometheus-owntracks-exporter/actions?query=workflow%3ALint+branch%3Amaster)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linusgroh/prometheus-owntracks-exporter)](https://hub.docker.com/r/linusgroh/prometheus-owntracks-exporter)
+[![License](https://img.shields.io/github/license/linusg/prometheus-owntracks-exporter?color=d63e97)](https://github.com/linusg/prometheus-owntracks-exporter/blob/master/LICENSE)
+[![Black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/ambv/black)
 
 ## Installation
 
