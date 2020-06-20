@@ -85,3 +85,7 @@ scrape_configs:
 | `owntracks_users_count` | Total number of users |
 | `owntracks_version_info` | OwnTracks Recorder version |
 | `owntracks_waypoints_count` | Total number of waypoints |
+
+## Grafana
+
+A simple Grafana dashboard is available in [`grafana/owntracks.json`](grafana/owntracks.json).
