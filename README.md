@@ -62,6 +62,8 @@ Configuration is done via environment variables (or by adding a `.env` file).
 | `OWNTRACKS_URL` | Base URL to the OwnTracks Recorder's HTTP API (without `/api/...`) | |
 | `UPDATE_INTERVAL` | Interval in which the metrics are updated (in seconds) | `60` |
 
+When using the Docker image a few more environment variables are available (inherited) - see [here](https://github.com/tiangolo/uvicorn-gunicorn-docker#environment-variables).
+
 ### `prometheus.yml`
 
 ```yaml
