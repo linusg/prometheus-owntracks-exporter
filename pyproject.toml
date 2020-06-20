@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "prometheus-owntracks-exporter"
+version = "0.1.0"
+description = "Prometheus OwnTracks Exporter"
+authors = ["Linus Groh <mail@linusgroh.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiofiles = "^0.5.0"
+aiohttp = {version = "^3.6.2", extras = ["speedups"]}
+prometheus_client = "^0.8.0"
+starlette = "^0.13.4"
+uvicorn = "^0.11.5"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^19.10b0", allow-prereleases = true}
+isort = {extras = ["pyproject"], version = "^4.3.21"}
+mypy = "^0.781"
+pyflakes = "^2.2.0"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88

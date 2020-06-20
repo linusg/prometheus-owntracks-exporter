@@ -1,0 +1,38 @@
+name: Lint
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install
+      uses: abatilo/actions-poetry@v1.5.0
+      with:
+        python_version: 3.8.3
+        poetry_version: 1.0.9
+        args: install --no-root
+    - name: Run black
+      uses: abatilo/actions-poetry@v1.5.0
+      with:
+        python_version: 3.8.3
+        poetry_version: 1.0.9
+        args: run black --check *.py
+    - name: Run isort
+      uses: abatilo/actions-poetry@v1.5.0
+      with:
+        python_version: 3.8.3
+        poetry_version: 1.0.9
+        args: run isort --check *.py
+    - name: Run mypy
+      uses: abatilo/actions-poetry@v1.5.0
+      with:
+        python_version: 3.8.3
+        poetry_version: 1.0.9
+        args: run mypy *.py
+    - name: Run pyflakes
+      uses: abatilo/actions-poetry@v1.5.0
+      with:
+        python_version: 3.8.3
+        poetry_version: 1.0.9
+        args: run pyflakes *.py
