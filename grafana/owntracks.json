@@ -632,7 +632,7 @@
       },
       "yaxes": [
         {
-          "decimals": null,
+          "decimals": 2,
           "format": "decbytes",
           "label": null,
           "logBase": 1,
@@ -749,5 +749,5 @@
   "timezone": "",
   "title": "OwnTracks",
   "uid": "GqrozcZMk",
-  "version": 2
+  "version": 3
 }
