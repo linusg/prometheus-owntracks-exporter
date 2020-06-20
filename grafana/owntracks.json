@@ -50,7 +50,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -60,6 +60,7 @@
       "targets": [
         {
           "expr": "owntracks_users_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -102,7 +103,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -112,6 +113,7 @@
       "targets": [
         {
           "expr": "owntracks_devices_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -154,7 +156,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -164,6 +166,7 @@
       "targets": [
         {
           "expr": "owntracks_cards_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -206,7 +209,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -216,6 +219,7 @@
       "targets": [
         {
           "expr": "owntracks_waypoints_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -258,7 +262,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -268,6 +272,7 @@
       "targets": [
         {
           "expr": "owntracks_last_locations_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -374,7 +379,7 @@
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -384,6 +389,7 @@
       "targets": [
         {
           "expr": "owntracks_locations_count",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -749,5 +755,5 @@
   "timezone": "",
   "title": "OwnTracks",
   "uid": "GqrozcZMk",
-  "version": 3
+  "version": 4
 }
