@@ -500,7 +500,7 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "connected",
       "options": {
         "dataLinks": []
       },
@@ -598,7 +598,7 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "connected",
       "options": {
         "dataLinks": []
       },
@@ -755,5 +755,5 @@
   "timezone": "",
   "title": "OwnTracks",
   "uid": "GqrozcZMk",
-  "version": 4
+  "version": 5
 }
