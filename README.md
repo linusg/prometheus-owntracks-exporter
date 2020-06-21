@@ -47,7 +47,7 @@ services:
 
 ```console
 poetry install --no-root --no-dev
-poetry run uvicorn main:app
+poetry run python main.py
 ```
 
 ### Development
@@ -66,9 +66,9 @@ Configuration is done via environment variables (or by adding a `.env` file).
 | `DEBUG` | Run the underlying Starlette ASGI app in debug mode | `False` |
 | `OWNTRACKS_STORAGEDIR` | Path to the OwnTracks Recorder storage directory (`OTR_STORAGEDIR`, `--storagedir`)| |
 | `OWNTRACKS_URL` | Base URL to the OwnTracks Recorder's HTTP API (without `/api/...`) | |
+| `SERVER_HOST` | HTTP server host | `"0.0.0.0"` |
+| `SERVER_PORT` | HTTP server port | `80` |
 | `UPDATE_INTERVAL` | Interval in which the metrics are updated (in seconds) | `60` |
-
-When using the Docker image a few more environment variables are available (inherited) - see [here](https://github.com/tiangolo/uvicorn-gunicorn-docker#environment-variables).
 
 ### `prometheus.yml`
 

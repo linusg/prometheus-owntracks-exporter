@@ -149,3 +149,15 @@ app = Starlette(
         partial(asyncio.get_event_loop().create_task, update_metrics_loop()),
     ],
 )
+
+
+def run() -> None:
+    import uvicorn  # type: ignore
+
+    from settings import SERVER_HOST, SERVER_PORT
+
+    uvicorn.run(app, host=SERVER_HOST, port=SERVER_PORT)
+
+
+if __name__ == "__main__":
+    run()
