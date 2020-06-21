@@ -1,7 +1,7 @@
 FROM python:3.8-slim
 
 RUN apt-get update && \
-    apt-get install -y build-essential curl gcc && \
+    apt-get install -y build-essential curl gcc libffi-dev && \
     rm -rf /var/lib/apt/lists/* && \
     curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_HOME=/opt/poetry python && \
     cd /usr/local/bin && \
