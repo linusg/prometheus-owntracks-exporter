@@ -124,7 +124,9 @@ METRICS = {
 
 
 async def update_metrics() -> None:
-    await asyncio.gather(*[metric.update() for metric in METRICS.values()])
+    await asyncio.gather(
+        *[metric.update() for metric in METRICS.values()], return_exceptions=True
+    )
 
 
 async def update_metrics_loop() -> None:
