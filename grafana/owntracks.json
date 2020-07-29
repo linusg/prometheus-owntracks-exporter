@@ -37,7 +37,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 0,
         "y": 0
@@ -54,9 +54,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_users_count",
@@ -90,7 +91,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 4,
         "y": 0
@@ -107,9 +108,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_devices_count",
@@ -143,7 +145,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 8,
         "y": 0
@@ -160,9 +162,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_cards_count",
@@ -196,7 +199,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 12,
         "y": 0
@@ -213,9 +216,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_waypoints_count",
@@ -249,7 +253,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 16,
         "y": 0
@@ -266,9 +270,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_last_locations_count",
@@ -303,7 +308,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 20,
         "y": 0
@@ -320,9 +325,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_last_received_timestamp * 1000",
@@ -359,7 +365,7 @@
         "h": 3,
         "w": 12,
         "x": 0,
-        "y": 4
+        "y": 3
       },
       "id": 14,
       "options": {
@@ -373,9 +379,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_locations_count",
@@ -413,7 +420,7 @@
         "h": 3,
         "w": 12,
         "x": 12,
-        "y": 4
+        "y": 3
       },
       "id": 13,
       "options": {
@@ -427,9 +434,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "auto"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_storagedir_size",
@@ -465,7 +473,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 7
+        "y": 6
       },
       "hiddenSeries": false,
       "id": 8,
@@ -481,10 +489,8 @@
       "lines": true,
       "linewidth": 1,
       "nullPointMode": "connected",
-      "options": {
-        "dataLinks": []
-      },
       "percentage": false,
+      "pluginVersion": "7.1.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -563,7 +569,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 7
+        "y": 6
       },
       "hiddenSeries": false,
       "id": 15,
@@ -579,10 +585,8 @@
       "lines": true,
       "linewidth": 1,
       "nullPointMode": "connected",
-      "options": {
-        "dataLinks": []
-      },
       "percentage": false,
+      "pluginVersion": "7.1.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -648,17 +652,7 @@
             "align": null
           },
           "displayName": "{{version}}",
-          "mappings": [
-            {
-              "from": "",
-              "id": 0,
-              "operator": "",
-              "text": "",
-              "to": "",
-              "type": 1,
-              "value": "1"
-            }
-          ],
+          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -675,7 +669,7 @@
         "h": 3,
         "w": 4,
         "x": 0,
-        "y": 15
+        "y": 14
       },
       "id": 10,
       "options": {
@@ -689,9 +683,10 @@
           ],
           "fields": "",
           "values": false
-        }
+        },
+        "textMode": "name"
       },
-      "pluginVersion": "7.0.3",
+      "pluginVersion": "7.1.1",
       "targets": [
         {
           "expr": "owntracks_version_info",
@@ -709,7 +704,7 @@
     }
   ],
   "refresh": "5m",
-  "schemaVersion": 25,
+  "schemaVersion": 26,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -735,5 +730,5 @@
   "timezone": "",
   "title": "OwnTracks",
   "uid": "GqrozcZMk",
-  "version": 6
+  "version": 7
 }
